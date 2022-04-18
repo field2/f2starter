@@ -19,7 +19,7 @@ if ( ! function_exists( 'f2_starter_setup' ) ) :
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'title-tag' );
 		add_theme_support('post-thumbnails');
-		register_nav_menus(array('primary' => 'Primary Nav', 'footer' => 'Footer Nav'));
+		register_nav_menus(array('primary' => 'Primary Nav', 'footer' => 'Footer Nav', 'social' => 'Social Nav'));
 
 
 
@@ -46,9 +46,10 @@ add_action( 'after_setup_theme', 'f2_starter_setup' );
 function f2_starter_scripts() {
 	wp_enqueue_style( 'artists-theme-style', get_stylesheet_uri() );
 wp_enqueue_script('site', get_template_directory_uri() . '/js/scripts.js', array('jquery-ui-core', 'jquery'), null, true);
-
+   wp_enqueue_style( 'dashicons' );
 
 }
+
 
 add_action( 'wp_enqueue_scripts', 'f2_starter_scripts' );
 

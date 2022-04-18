@@ -15,7 +15,6 @@ gulp.task('sass', function(done) {
 	.pipe(sass({
 		outputStyle: 'compressed'
 	}))
-		// .pipe(sass({errLogToConsole: true}))
 		.pipe(autoprefixer('last 2 version'))
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./'))

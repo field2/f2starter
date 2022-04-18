@@ -1,0 +1,90 @@
+/*
+Theme Name: Field 2 starter
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	min-height: 100%;
+	background: #000;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	grid-template-rows: auto 1fr auto;
+}
+
+header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	nav ul {
+		list-style: none;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			display: block;
+			padding: 1rem .5rem;
+			transition: opacity .3s ease;
+text-transform: lowercase;
+			&:hover {
+				opacity: .7;
+			}
+		}
+
+		display: flex;
+	}
+
+	nav.menu-primary-container {
+		flex: 1;
+
+		ul {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: flex-end;
+a {
+	padding:1rem 2rem;
+}
+			li:first-child {
+				width: 100%;
+
+				a {
+					text-transform: uppercase;
+					font-weight: bold;
+					padding:1rem;
+				}
+			}
+		}
+			@media (orientation:landscape) {
+		margin-right: 4rem;
+	}
+	}
+
+}
+
+main#site_main {
+	@media (orientation: landscape) {
+		width:1200px;
+		margin:0 auto;
+	}
+}
+
+footer#site_footer {
+	padding: 1rem;
+}

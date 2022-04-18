@@ -12,4 +12,12 @@
 	wp_nav_menu(array('theme_location'=> 'primary', 'container'=>'nav', 'menu_class'=>'primary')); 
 }
 ?>
+
+		<?php 
+	if ( has_nav_menu( 'social' ) ) {
+	wp_nav_menu(array('theme_location'=> 'social', 'container'=>'nav', 'menu_class'=>'social')); 
+}
+?>
+
+
 	</header>
