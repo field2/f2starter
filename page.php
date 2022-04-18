@@ -1,10 +1,10 @@
 <?php
 get_header();
 ?>
-<main>
+<main id="site_main">
 <?php 	if ( have_posts() ) : 	
 ?>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1><?php single_post_title(); ?></h1>
 
 				<?php
 
@@ -19,7 +19,7 @@ the_content();
 
 		endif;
 		 ?>
-</main><!-- #main -->
+</main><!-- #site_main -->
 
 <?php
 get_footer();

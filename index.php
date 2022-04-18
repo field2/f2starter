@@ -4,7 +4,7 @@ get_header();
 <main>
 <?php 	if ( have_posts() ) : 	
 ?>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+					<h1><?php single_post_title(); ?></h1>
 
 				<?php
 
