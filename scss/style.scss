@@ -21,6 +21,8 @@ body {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	grid-template-rows: auto 1fr auto;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 header {
@@ -39,7 +41,8 @@ header {
 			display: block;
 			padding: 1rem .5rem;
 			transition: opacity .3s ease;
-text-transform: lowercase;
+			text-transform: lowercase;
+
 			&:hover {
 				opacity: .7;
 			}
@@ -58,30 +61,32 @@ text-transform: lowercase;
 			display: -o-flex;
 			display: flex;
 			align-items: flex-end;
-a {
-	padding:1rem 2rem;
-}
+
+			a {
+				padding: 1rem 2rem;
+			}
+
 			li:first-child {
 				width: 100%;
 
 				a {
 					text-transform: uppercase;
 					font-weight: bold;
-					padding:1rem;
+					padding: 1rem;
 				}
 			}
 		}
-			@media (orientation:landscape) {
-		margin-right: 4rem;
-	}
-	}
 
+		@media (orientation: landscape) {
+			margin-right: 4rem;
+		}
+	}
 }
 
 main#site_main {
 	@media (orientation: landscape) {
-		width:1200px;
-		margin:0 auto;
+		width: 1200px;
+		margin: 0 auto;
 	}
 }
 
