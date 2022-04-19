@@ -40,7 +40,8 @@ header {
 		padding: 1rem .5rem;
 		transition: opacity .3s ease;
 		text-transform: lowercase;
-
+		letter-spacing: .2em;
+font-weight:200;
 		&:hover {
 			opacity: .7;
 		}
@@ -81,7 +82,7 @@ input#menu-toggle {
 a.home_link {
 	display: block;
 	text-transform: uppercase;
-	font-weight: bold;
+
 	padding: 1rem;
 }
 
