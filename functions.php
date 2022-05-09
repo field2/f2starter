@@ -54,3 +54,30 @@ wp_enqueue_script('site', get_template_directory_uri() . '/js/scripts.js', array
 add_action( 'wp_enqueue_scripts', 'f2_starter_scripts' );
 
 
+/** shows what main file is being loaded **/
+// add_action('wp_head', 'show_template');
+// function show_template() {
+// global $template;
+// print_r($template);
+// }
+
+
+function f2_starterwidgets_init() {
+	register_sidebar(array(
+		'id' => 'sidebar',
+		'name' => 'Sidebar Widgets',
+	));
+	register_sidebar(array(
+		'id' => 'blog_sidebar',
+		'name' => 'Blog Sidebar',
+	));
+}
+add_action('widgets_init', 'f2_starterwidgets_init');
+
+// enable svg uploads. WP please fix this
+function cc_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
