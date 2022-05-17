@@ -2,7 +2,6 @@
 get_header();
 ?>
 <main id="site_main">
-	page.php
 <?php 	if ( have_posts() ) : 	
 ?>
 

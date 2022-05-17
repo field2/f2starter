@@ -24,7 +24,7 @@ body {
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-position: 0 48px;
-	overflow-x:hidden;
+	overflow-x: hidden;
 }
 
 header {
@@ -33,6 +33,7 @@ header {
 	justify-content: space-between;
 	width: 100vw;
 	background: #000;
+
 	a {
 		color: #fff;
 		display: block;
@@ -41,7 +42,8 @@ header {
 		transition: opacity .3s ease;
 		text-transform: lowercase;
 		letter-spacing: .2em;
-font-weight:200;
+		font-weight: 200;
+
 		&:hover {
 			opacity: .7;
 		}
@@ -82,13 +84,13 @@ input#menu-toggle {
 a.home_link {
 	display: block;
 	text-transform: uppercase;
-
 	padding: 1rem;
 }
 
 li.current_page_item a {
-font-weight: bold;
+	font-weight: bold;
 }
+
 /* nav */
 
 ul.primary {
@@ -104,9 +106,10 @@ ul.primary {
 
 nav.menu-social-container {
 	position: relative;
+
 	ul {
 		display: flex;
-		margin:0 1rem;
+		margin: 0 1rem;
 	}
 }
 
@@ -124,8 +127,9 @@ input#menu-toggle {
 
 @media (orientation: landscape) {
 	input#menu-toggle {
-display: none;
-}
+		display: none;
+	}
+
 	.hamburger {
 		display: none;
 	}
@@ -146,7 +150,42 @@ display: none;
 h1, main > h2 {
 	font-weight: 300;
 	margin-top: 1em;
-	color:rgba(255,255,255,0.6);
-	text-shadow:0 0 6px #000;
+	color: rgba(255, 255, 255, 0.6);
+	text-shadow: 0 0 6px #000;
 	font-size: 64px;
+}
+
+main  h3 {
+	font-weight: 300;;
+}
+
+// album samples
+.samples {
+	.wp-block-audio, .wp-block-image {
+		margin: 0;
+		display: block;
+	}
+
+	.wp-block-columns {
+		margin-top: .5rem;
+
+		align-items: center;
+justify-content: space-between;
+.wp-block-column {
+	flex-basis:auto;
+			opacity:.7;
+			transition:opacity .2s ease;
+			&:hover {
+				opacity:1;
+			}
+}
+		.wp-block-column:first-child {
+			width:100%;
+
+		}
+	}
+
+	.wp-block-audio audio {
+		display: block;
+	}
 }
