@@ -2,7 +2,7 @@
 Theme Name: Field 2 starter
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600&display=swap');
 
 * {
 	margin: 0;
@@ -19,7 +19,7 @@ body {
 	min-height: 100%;
 	background-color: #000;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Mulish', sans-serif;
 	grid-template-rows: auto 1fr auto;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -147,16 +147,16 @@ input#menu-toggle {
 }
 
 /* type */
-h1, main > h2 {
-	font-weight: 300;
-	margin-top: 1em;
-	color: rgba(255, 255, 255, 0.6);
+h1, main>h2:first-of-type {
+	font-weight: 100;
+	margin-top: 3rem;
+	color: rgba(255, 255, 255, 0.7);
 	text-shadow: 0 0 6px #000;
-	font-size: 64px;
+	font-size: 128px;
 }
 
 main  h3 {
-	font-weight: 300;;
+	font-weight: 300;
 }
 
 // album samples
@@ -188,4 +188,17 @@ justify-content: space-between;
 	.wp-block-audio audio {
 		display: block;
 	}
+}
+
+// get album buttons 
+.wp-block-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+// full width video embeds
+
+.wp-block-embed.is-type-video iframe {
+
+    width: 100%;
 }
